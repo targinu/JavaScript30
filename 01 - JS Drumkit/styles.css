@@ -6,11 +6,13 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #000;
 }
 
 h1 {
   margin-bottom: 30px;
+  font-weight: bold;
+  color: #ffff;
 }
 
 .drumkit {
@@ -25,21 +27,26 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #373737;
+  border: 3px solid #ffff;
   padding: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .key:hover {
-  background-color: #f5f5f5;
+  background-color: #000;
+}
+
+.key.pressed {
+  background-color: #000;
 }
 
 kbd {
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 .sound {
@@ -47,4 +54,5 @@ kbd {
   font-weight: bold;
   align-items: center;
   text-align: center;
+  color: orange;
 }
