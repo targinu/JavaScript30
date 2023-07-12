@@ -45,4 +45,6 @@ kbd {
 .sound {
   font-size: 14px;
   font-weight: bold;
+  align-items: center;
+  text-align: center;
 }
