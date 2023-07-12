@@ -1,0 +1,91 @@
+html {
+  background-color: #000;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#frame {
+  width: 500px;
+  height: 500px;
+  border: 15px solid #ffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.horas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hora {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transform-origin: bottom center;
+}
+
+.hora1 {
+  transform: rotate(30deg) translate(-50%, -210px) rotate(-30deg);
+}
+
+.hora2 {
+  transform: rotate(60deg) translate(-50%, -210px) rotate(-60deg);
+}
+
+.hora3 {
+  transform: rotate(90deg) translate(-50%, -210px) rotate(-90deg);
+}
+
+.hora4 {
+  transform: rotate(120deg) translate(-50%, -210px) rotate(-120deg);
+}
+
+.hora5 {
+  transform: rotate(150deg) translate(-50%, -210px) rotate(-150deg);
+}
+
+.hora6 {
+  transform: rotate(180deg) translate(-50%, -210px) rotate(-180deg);
+}
+
+.hora7 {
+  transform: rotate(210deg) translate(-50%, -210px) rotate(-210deg);
+}
+
+.hora8 {
+  transform: rotate(240deg) translate(-50%, -210px) rotate(-240deg);
+}
+
+.hora9 {
+  transform: rotate(270deg) translate(-50%, -210px) rotate(-270deg);
+}
+
+.hora10 {
+  transform: rotate(300deg) translate(-50%, -210px) rotate(-300deg);
+}
+
+.hora11 {
+  transform: rotate(330deg) translate(-50%, -210px) rotate(-330deg);
+}
+
+.hora12 {
+  transform: rotate(0deg) translate(-50%, -210px) rotate(0deg);
+}
