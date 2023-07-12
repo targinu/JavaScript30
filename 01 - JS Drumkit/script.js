@@ -14,7 +14,13 @@ function handleKeyDown(event) {
 
   if (key && audio) {
     key.classList.add("playing");
+    key.classList.add("pressed"); //adiciona a classe "pressed"
     playSound(audio);
+
+    //remove a classe "pressed" após a duração do áudio
+    setTimeout(() => {
+      key.classList.remove("pressed");
+    }, audio.duration * 1000); //multiplica a duração por 1000 para obter o tempo em milissegundos
   }
 }
 
@@ -32,5 +38,3 @@ function handleMouseClick(event) {
     playSound(audio);
   }
 }
-
-
