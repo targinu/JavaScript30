@@ -18,3 +18,19 @@ function handleKeyDown(event) {
   }
 }
 
+//adiciona evento de clique para cada div do drumkit
+const keys = Array.from(document.querySelectorAll(".key"));
+keys.forEach((key) => key.addEventListener("click", handleMouseClick));
+
+//função para tratar o evento de clique
+function handleMouseClick(event) {
+  const key = event.currentTarget;
+  const audio = document.querySelector(`audio[data-key="${key.dataset.key}"]`);
+
+  if (audio) {
+    key.classList.add("playing");
+    playSound(audio);
+  }
+}
+
+
