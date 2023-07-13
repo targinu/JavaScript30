@@ -92,7 +92,7 @@ body {
   transform: rotate(0deg) translate(0%, -230px) rotate(0deg);
 }
 
-.ponteiros-centro{
+.ponteiros-centro {
   width: 25px;
   height: 25px;
   background-color: #ffff;
@@ -127,4 +127,85 @@ body {
   left: calc(50% - 1px);
   top: calc(50% - 150px);
   transform-origin: bottom center;
+}
+
+/* responsividade */
+@media (max-width: 800px) {
+  #frame {
+    width: 300px;
+    height: 300px;
+    border-width: 7.5px;
+  }
+
+  .hora {
+    font-size: 16px;
+  }
+
+  .hora1 {
+    transform: rotate(30deg) translate(0%, -130px) rotate(-30deg);
+  }
+
+  .hora2 {
+    transform: rotate(60deg) translate(0%, -130px) rotate(-60deg);
+  }
+
+  .hora3 {
+    transform: rotate(90deg) translate(0%, -130px) rotate(-90deg);
+  }
+
+  .hora4 {
+    transform: rotate(120deg) translate(0%, -130px) rotate(-120deg);
+  }
+
+  .hora5 {
+    transform: rotate(150deg) translate(0%, -130px) rotate(-150deg);
+  }
+
+  .hora6 {
+    transform: rotate(180deg) translate(0%, -130px) rotate(-180deg);
+  }
+
+  .hora7 {
+    transform: rotate(210deg) translate(0%, -130px) rotate(-210deg);
+  }
+
+  .hora8 {
+    transform: rotate(240deg) translate(0%, -130px) rotate(-240deg);
+  }
+
+  .hora9 {
+    transform: rotate(270deg) translate(0%, -130px) rotate(-270deg);
+  }
+
+  .hora10 {
+    transform: rotate(300deg) translate(0%, -130px) rotate(-300deg);
+  }
+
+  .hora11 {
+    transform: rotate(330deg) translate(0%, -130px) rotate(-330deg);
+  }
+
+  .hora12 {
+    transform: rotate(0deg) translate(0%, -130px) rotate(0deg);
+  }
+
+  .ponteiros-centro {
+    width: 10px;
+    height: 10px;
+  }
+
+  .ponteiro-horas {
+    height: 50px;
+    top: calc(50% - 50px);
+  }
+
+  .ponteiro-minutos {
+    height: 90px;
+    top: calc(50% - 90px);
+  }
+
+  .ponteiro-segundos {
+    height: 75px;
+    top: calc(50% - 75px);
+  }
 }
