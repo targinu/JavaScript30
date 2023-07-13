@@ -16,6 +16,9 @@ body {
   border: 15px solid #ffff;
   border-radius: 50%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .horas {
@@ -23,10 +26,9 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
 }
@@ -43,83 +45,56 @@ body {
 }
 
 .hora1 {
-  transform: rotate(30deg) translate(-50%, -210px) rotate(-30deg);
+  transform: rotate(30deg) translate(0%, -230px) rotate(-30deg);
 }
 
 .hora2 {
-  transform: rotate(60deg) translate(-50%, -210px) rotate(-60deg);
+  transform: rotate(60deg) translate(0%, -230px) rotate(-60deg);
 }
 
 .hora3 {
-  transform: rotate(90deg) translate(-50%, -210px) rotate(-90deg);
+  transform: rotate(90deg) translate(0%, -230px) rotate(-90deg);
 }
 
 .hora4 {
-  transform: rotate(120deg) translate(-50%, -210px) rotate(-120deg);
+  transform: rotate(120deg) translate(0%, -230px) rotate(-120deg);
 }
 
 .hora5 {
-  transform: rotate(150deg) translate(-50%, -210px) rotate(-150deg);
+  transform: rotate(150deg) translate(0%, -230px) rotate(-150deg);
 }
 
 .hora6 {
-  transform: rotate(180deg) translate(-50%, -210px) rotate(-180deg);
+  transform: rotate(180deg) translate(0%, -230px) rotate(-180deg);
 }
 
 .hora7 {
-  transform: rotate(210deg) translate(-50%, -210px) rotate(-210deg);
+  transform: rotate(210deg) translate(0%, -230px) rotate(-210deg);
 }
 
 .hora8 {
-  transform: rotate(240deg) translate(-50%, -210px) rotate(-240deg);
+  transform: rotate(240deg) translate(0%, -230px) rotate(-240deg);
 }
 
 .hora9 {
-  transform: rotate(270deg) translate(-50%, -210px) rotate(-270deg);
+  transform: rotate(270deg) translate(0%, -230px) rotate(-270deg);
 }
 
 .hora10 {
-  transform: rotate(300deg) translate(-50%, -210px) rotate(-300deg);
+  transform: rotate(300deg) translate(0%, -230px) rotate(-300deg);
 }
 
 .hora11 {
-  transform: rotate(330deg) translate(-50%, -210px) rotate(-330deg);
+  transform: rotate(330deg) translate(0%, -230px) rotate(-330deg);
 }
 
 .hora12 {
-  transform: rotate(0deg) translate(-50%, -210px) rotate(0deg);
+  transform: rotate(0deg) translate(0%, -230px) rotate(0deg);
 }
 
-.ponteiros{
-  width: 400px;
-  height: 400px;
-  position: relative;
+.ponteiros-centro{
+  width: 25px;
+  height: 25px;
+  background-color: #ffff;
   border-radius: 50%;
-}
-
-.ponteiro-horas{
-  position: absolute;
-  width: 2px;
-  height: 100px;
-  background-color: #FFFF;
-  left: 188px;
-  top: 100px;
-}
-
-.ponteiro-minutos{
-  position: absolute;
-  width: 2px;
-  height: 180px;
-  background-color: #FFFF;
-  left: 188px;
-  top: 20px;
-}
-
-.ponteiro-segundos{
-  position: absolute;
-  width: 2px;
-  height: 150px;
-  background-color: #FF0000;
-  left: 188px;
-  top: 50px;
 }
