@@ -98,3 +98,33 @@ body {
   background-color: #ffff;
   border-radius: 50%;
 }
+
+.ponteiro-horas {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background-color: #ffff;
+  left: calc(50% - 1px);
+  top: calc(50% - 100px);
+  transform-origin: bottom center;
+}
+
+.ponteiro-minutos {
+  position: absolute;
+  width: 2px;
+  height: 180px;
+  background-color: #ffff;
+  left: calc(50% - 1px);
+  top: calc(50% - 180px);
+  transform-origin: bottom center;
+}
+
+.ponteiro-segundos {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: #ff0000;
+  left: calc(50% - 1px);
+  top: calc(50% - 150px);
+  transform-origin: bottom center;
+}
