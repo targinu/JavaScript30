@@ -89,3 +89,37 @@ body {
 .hora12 {
   transform: rotate(0deg) translate(-50%, -210px) rotate(0deg);
 }
+
+.ponteiros{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.ponteiro-horas{
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background-color: #FFFF;
+  left: 188px;
+  top: 100px;
+}
+
+.ponteiro-minutos{
+  position: absolute;
+  width: 2px;
+  height: 180px;
+  background-color: #FFFF;
+  left: 188px;
+  top: 20px;
+}
+
+.ponteiro-segundos{
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: #FF0000;
+  left: 188px;
+  top: 50px;
+}
