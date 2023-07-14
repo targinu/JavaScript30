@@ -27,3 +27,21 @@ body {
   margin: 0;
   margin-top: 20px;
 }
+
+/* responsividade */
+@media (max-width: 800px) {
+  #controls {
+    flex-direction: column;
+  }
+
+  #photo {
+    margin: 0;
+    padding: 0;
+  }
+
+  #image {
+    margin: 0;
+    padding: 0;
+    transform: scale(0.6);
+  }
+}

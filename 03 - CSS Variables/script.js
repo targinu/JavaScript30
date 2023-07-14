@@ -1,8 +1,8 @@
 //obtem os elemtentos dos controles
-const spacingInput = document.getElementById('spacing');
-const blurInput = document.getElementById('blur');
-const baseColorInput = document.getElementById('base-color');
-const image = document.getElementById('image');
+const spacingInput = document.getElementById("spacing");
+const blurInput = document.getElementById("blur");
+const baseColorInput = document.getElementById("base-color");
+const image = document.getElementById("image");
 
 //função para atualizar as propriedades CSS
 function updateCSSVariables() {
@@ -21,6 +21,6 @@ function updateCSSVariables() {
 }
 
 //atualiza as propriedades CSS quando os controles são alterados
-spacingInput.addEventListener('input', updateCSSVariables);
-blurInput.addEventListener('input', updateCSSVariables);
-baseColorInput.addEventListener('input', updateCSSVariables);
+spacingInput.addEventListener("input", updateCSSVariables);
+blurInput.addEventListener("input", updateCSSVariables);
+baseColorInput.addEventListener("input", updateCSSVariables);
