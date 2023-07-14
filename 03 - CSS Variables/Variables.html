@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Variables</title>
-</head>
-<body>
-    <h1>Variables</h1>
-    <input type="range" >
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="controls">
+        <h2>Spacing</h2>
+        <input type="range" />
 
-</body>
+        <h2>Blur</h2>
+        <input type="range" />
+
+        <h2>Base Color</h2>
+        <input type="color" id="favcolor" name="favcolor" />
+      </div>
+
+      <div id="photo">
+        <img src="photo.jpg" width="500" height="333" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
