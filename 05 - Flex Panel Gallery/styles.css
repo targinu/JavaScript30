@@ -19,10 +19,8 @@ body {
   color: white;
   text-align: center;
   align-items: center;
-  transition:
-    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-    background 0.2s; 
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
   font-size: 16px;
   background-size: cover;
   background-position: center;
@@ -32,12 +30,21 @@ body {
   flex-direction: column;
 }
 
-.painel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-.painel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-.painel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-.painel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-.painel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
-
+.painel1 {
+  background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+}
+.painel2 {
+  background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+}
+.painel3 {
+  background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+}
+.painel4 {
+  background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+}
+.painel5 {
+  background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+}
 
 .painel > * {
   margin: 0;
@@ -77,8 +84,35 @@ body {
   font-size: 40px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
+  .paineis {
+    flex-direction: column;
+  }
+
   .painel p {
+    font-size: 1em;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .painel:not(.open) p:nth-child(2),
+  .painel:not(.open) p:nth-child(4),
+  .painel:not(.open) p:nth-child(6) {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .painel:not(.open) p:nth-child(1),
+  .painel:not(.open) p:nth-child(3),
+  .painel:not(.open) p:nth-child(5) {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  .painel.open p {
+    transform: translateY(0);
+    opacity: 1;
     font-size: 1em;
   }
 }
