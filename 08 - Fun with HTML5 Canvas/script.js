@@ -65,3 +65,55 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mousemove", desenhar);
 canvas.addEventListener("mouseup", () => (estaDesenhando = false));
 canvas.addEventListener("mouseout", () => (estaDesenhando = false));
+
+//função para desenhar no canvas com eventos de toque
+function desenharTouch(e) {
+  e.preventDefault(); //evita que o toque dispare eventos indesejados
+  if (!estaDesenhando) return;
+
+  //obtem as coordenadas do toque
+  const touch = e.touches[0];
+  const x = touch.clientX;
+  const y = touch.clientY;
+
+  //configura a cor da linha com base na matiz
+  ctx.strokeStyle = `hsl(${matiz}, 100%, 50%)`;
+
+  ctx.beginPath();
+  ctx.moveTo(ultimoX, ultimoY);
+  ctx.lineTo(x, y);
+  ctx.stroke();
+
+  //atualiza as coordenadas do último ponto desenhado
+  ultimoX = x;
+  ultimoY = y;
+
+  //atualiza o valor da matiz
+  matiz++;
+  if (matiz >= 360) {
+    matiz = 0;
+  }
+
+  //inverte a direção quando a largura atingir os limites
+  if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+    direcao = !direcao;
+  }
+
+  //aumentar ou diminuir a largura da linha com base na direção
+  if (direcao) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
+}
+
+//eventos de toque para iniciar e parar o desenho
+canvas.addEventListener("touchstart", (e) => {
+  estaDesenhando = true;
+  const touch = e.touches[0];
+  ultimoX = touch.clientX;
+  ultimoY = touch.clientY;
+});
+
+canvas.addEventListener("touchmove", desenharTouch);
+canvas.addEventListener("touchend", () => (estaDesenhando = false));
