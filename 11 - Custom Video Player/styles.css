@@ -44,10 +44,27 @@ body {
   max-width: 50px;
 }
 
+.volume-icon {
+  font-size: 20px;
+  margin: auto;
+  padding: auto;
+  cursor: default;
+}
+
+.speed-icon {
+  color: #ffff;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 20px;
+  padding: auto;
+  cursor: default;
+}
+
 .player_slider {
   width: 10px;
   height: 30px;
   color: #000;
+  cursor: pointer;
 }
 
 .player_controls {
@@ -73,6 +90,11 @@ body {
   flex: 1;
 }
 
+.player_controls > .volume-icon,
+.speed-icon {
+  flex: 0.1;
+}
+
 .progress {
   flex: 10;
   position: relative;
@@ -81,7 +103,7 @@ body {
   height: 5px;
   transition: height 0.3s;
   background: rgba(0, 0, 0, 0.5);
-  cursor: ew-resize;
+  cursor: pointer;
 }
 
 .progress_filled {
