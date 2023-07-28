@@ -1,0 +1,28 @@
+html {
+  background-color: #000;
+  color: #ffff;
+}
+
+body {
+  margin: 0;
+}
+
+.efeito {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+
+h1 {
+  text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+  font-size: 100px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+  
+}
