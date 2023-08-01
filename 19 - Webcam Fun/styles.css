@@ -1,0 +1,83 @@
+html {
+  background-color: #000;
+}
+
+body {
+  color: #ffff;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player,
+.photo {
+  margin: 10px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-item {
+  margin: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+}
+
+.tirar-foto{
+  text-align: center;
+}
+
+.take-photo-button {
+  margin: 5px;
+  padding: 10px 15px;
+}
+
+.reset-button {
+  margin: 5px;
+  padding: 10px 15px;
+}
+
+.photo-item a{
+  position: absolute;
+  transform: translate(-100%, 0%);
+  background-color: #ffff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.visupadrao p{
+  position: absolute;
+  transform: translate(335%, -1340%);
+  background-color: #ffff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.visualterada p{
+  position: absolute;
+  transform: translate(261%, -1340%);
+  background-color: #ffff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}

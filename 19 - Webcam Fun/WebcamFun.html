@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Fun</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="visupadrao">
+        <video class="player" autoplay></video>
+        <p>Visualização padrão</p>
+      </div>
+
+      <div class="visualterada">
+        <canvas class="photo"></canvas>
+        <p>Visualização com efeitos</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onClick="applyMirror()">Espelho</button>
+      <button onClick="applyBlackAndWhite()">Preto e Branco</button>
+      <button onClick="applySaturate()">Saturação</button>
+      <button onClick="applyNegative()">Negativo</button>
+      <button class="reset-button" onClick="resetPhotoEffects()">
+        Remover Efeitos
+      </button>
+    </div>
+    <div class="tirar-foto">
+      <button class="take-photo-button" onClick="takePhoto()">
+        Tirar Foto
+      </button>
+    </div>
+    <div class="photos"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
