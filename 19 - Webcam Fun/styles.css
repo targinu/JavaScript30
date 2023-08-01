@@ -2,10 +2,6 @@ html {
   background-color: #000;
 }
 
-body {
-  color: #ffff;
-}
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +34,7 @@ body {
   padding: 10px 15px;
 }
 
-.tirar-foto{
+.tirar-foto {
   text-align: center;
 }
 
@@ -52,7 +48,7 @@ body {
   padding: 10px 15px;
 }
 
-.photo-item a{
+.photo-item a {
   position: absolute;
   transform: translate(-100%, 0%);
   background-color: #ffff;
@@ -62,7 +58,7 @@ body {
   padding: 10px;
 }
 
-.visupadrao p{
+.visupadrao p {
   position: absolute;
   transform: translate(335%, -1340%);
   background-color: #ffff;
@@ -72,7 +68,7 @@ body {
   padding: 10px;
 }
 
-.visualterada p{
+.visualterada p {
   position: absolute;
   transform: translate(261%, -1340%);
   background-color: #ffff;
@@ -80,4 +76,33 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 10px;
+}
+
+/* reponsividade */
+@media screen and (max-width: 800px) {
+  .wrapper {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player,
+  .photo {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .photo-item img {
+    width: 100%; 
+  }
+
+  .controls {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 5px 0px;
+  }
 }
