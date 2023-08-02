@@ -1,0 +1,73 @@
+html {
+  background-color: #000;
+}
+
+body {
+  color: #ffff;
+  min-height: 100vh;
+  margin: 0; 
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  background: rgba(0,0,0,0.05);
+  border-radius: 20px;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid #adadc9;
+  position: absolute;
+  top: 0;
+  background: #adadc9;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin:100px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 20px;
+  color: #ffff;
+}
+
+/* reponsividade */
+@media screen and (max-width: 800px) {
+ body{
+  text-align: center;
+  justify-content: center;
+ }
+
+ .menu{
+  margin: 30px 0;
+ }
+
+ .menu a{
+  margin: 0 3px;
+  font-size: 14px;
+ }
+
+ .wrapper{
+  font-size: 14px;
+ }
+}
