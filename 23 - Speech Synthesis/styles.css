@@ -1,0 +1,70 @@
+html {
+  background-color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.voiceinator {
+  text-align: center;
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+select,
+input[type="range"],
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+#stop {
+  background-color: #dc3545;
+}
+
+#stop:hover {
+  background-color: #a71d2a;
+}
+
+#stop:active {
+  background-color: #7f1c25;
+}
