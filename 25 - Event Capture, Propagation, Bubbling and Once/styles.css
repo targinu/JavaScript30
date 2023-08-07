@@ -1,0 +1,27 @@
+html {
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+}
+
+.um {
+  background: tomate;
+}
+
+.dois {
+  background: rosa;
+}
+
+.três {
+  background: coral;
+}
