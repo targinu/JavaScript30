@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background {
+  background-color: #ffc600;
+  padding: 10px;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.pontuacao {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.btnIniciar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnIniciar:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+.jogo {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.buraco {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.buraco:after {
+  display: block;
+  background: url(buraco.svg) bottom center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.toupeira {
+  background: url("toupeira.svg") bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.toupeira:hover {
+  cursor: pointer;
+}
+
+.buraco.emergir .toupeira {
+  top: 0;
+}
+
+/* responsividade */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .jogo {
+    width: 80%;
+  }
+
+  .buraco:after {
+    height: 30px;
+    bottom: -15px;
+  }
+
+}
